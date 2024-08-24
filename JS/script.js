@@ -10,13 +10,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuBar = document.getElementById('menu-bar');
     const navbar = document.querySelector('.navbar');
-    const icon = document.querySelector('.icon');
 
     menuBar.addEventListener('click', function () {
-        // Toggle the 'show' class on the navbar
-        navbar.classList.toggle('show');
+        //Toggle the 'active' class on the navbar
+        navbar.classList.toggle('active'); 
         
-        // Toggle the 'active' class on the icon container to rotate the icon
-        icon.classList.toggle('active');
+        //Apply animation to te navbar
+        if (navbar.classList.contains(active)) {
+            navbar.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+            navbar.style.opacity = "1";
+            navbar.style.transition = "clip-path 0.5s ease-in-out, opacity 0.5s ease-in-out"
+        }else {
+            navbar.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+            navbar.style.opacity = "0";
+        }
     });
 });
