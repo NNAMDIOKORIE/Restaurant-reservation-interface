@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.body{
+    min-height: 100vh;
+    display: flex;
+    column-gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+   
+    background:white;
+}
+ 
+.bookings
+{
+    position: relative;
+    max-width: 470px;
+    width: 100%;
+    background: #141429;
+}
+.h5 {
+    font-style: oblique;
+    font-size: large;
+    font-weight: bold;
+    color:rgb(196, 150, 13);
+}
+.h1 {
+  color: white; 
+  font-size:x-large; 
+  font-weight: bolder;
+}
+.details{
+    color: white;
+    font-weight: 400;
+
+}
